@@ -68,7 +68,7 @@ def consumer(almacen, empty, non_empty, lista_final):
         empty[pos].release() #Avisamos de que ya puede producir al productor del numero que acabamos de retirar
         
         non_empty[pos].acquire() #y esperamos a que se vuelva a llenar esa posicion
-        delay()
+        
     print("Lista final ordenada:",lista_final) 
 
 def main():
